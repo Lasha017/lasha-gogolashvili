@@ -1,0 +1,120 @@
+@media screen and (min-width:720px){
+    .container{
+        width: 768px;
+    }
+    .title{
+        display: flex;
+    }
+    .keyboard-box{
+        overflow: hidden;
+        width: 300px;
+    }
+    .pictures-section{
+        padding-left: 39px;
+    }
+    .first-picture img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .second-picture img{
+        width: 400px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .paragraph-section{
+       display: flex;
+       padding-inline: 24px;
+    }
+    .paragraph-section h2{
+        text-align: initial;
+    }
+    .paragraph-section p{
+        display: flex;
+        align-items: center;
+    }
+    .grid-container{
+        grid-template-columns: auto auto;
+        gap: 64px;
+        margin-bottom: 128px;
+    }
+    .feature{
+        text-align: initial;
+    }
+    .feature p{
+        text-align: initial;
+    }
+    .feature h2 {
+        text-align: initial;
+    }
+
+}
+@media screen and (min-width:1440px){
+    .container{
+        max-width: 1440px;
+        width: 100%;
+        padding-inline: 165px;
+    }
+    .title{
+        display: flex;
+    }
+    .keyboard-box {
+        width: 550px;
+        overflow: hidden; 
+    }
+    .crop{
+        display: flex;
+    }
+    .square{
+       position: absolute;
+       right: 0px;
+       top: 120px;
+       display: initial;
+    }
+    .first-picture img{
+        width: 200px;
+        height: 350px;
+        border-radius: 10px;
+    }
+    .second-picture img{
+        width: 400px;
+        height: 350px;
+        border-radius: 10px;
+    }
+    .card-middle{
+        display: flex;
+        align-items: center;
+        gap: 70px;
+    }
+    .paragraph-section{
+        display: flex;
+       flex-direction: column;
+       width: 255px;
+    }
+    .paragraph-section p{
+        text-align: initial;
+    }
+   .second-square{
+    display: initial;
+    position: absolute;
+    left: 0;
+    transform: rotate(180deg);
+   }
+   .grid-container{
+    grid-template-columns: auto auto auto auto;
+    gap: 64px;
+    margin-bottom: 128px;
+}
+.feature{
+    text-align: initial;
+}
+.feature p{
+    text-align: initial;
+}
+.feature h2 {
+    text-align: initial;
+}
+
+}
+ 
+ 
