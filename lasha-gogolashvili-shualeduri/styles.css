@@ -16,7 +16,7 @@ body{
 .header{
   display: flex;
   justify-content: space-between;
-  padding-inline: 24.5px;
+  padding-left: 24.5px
 }
 .header-left{
     background-color: var(--orange);
@@ -175,4 +175,14 @@ line-height: 26px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+}
+.header-right:hover{
+    background-color: var(--darkblue);
+    color: white;
+    cursor: pointer;
+}
+.button-left:hover{
+    background-color: var(--lightorange);
+    color: white;
+    cursor: pointer;
 }
