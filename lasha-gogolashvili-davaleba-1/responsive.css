@@ -1,10 +1,8 @@
-@media screen and (min-width: 1140px){
+@media screen and (min-width: 1440px){
     body{
         display: flex;
-        width: 1440px;
         padding: 164px 165px;
         justify-content: center;
-        /* height: 900px; */
         align-items: center;
       }
       /* .grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4, .grid-item-5 {
@@ -12,9 +10,11 @@
       } */
       .container{
           display: grid;
+          width: 1440px;
           gap: 20px;
           justify-content: center;
           grid-template-columns: auto auto auto auto;
+          
       }
       .grid-item-1{
           grid-column: 1 / span 2;
