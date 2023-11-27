@@ -10,7 +10,7 @@
       } */
       .container{
           display: grid;
-          width: 1440px;
+          width: 1420px;
           gap: 20px;
           justify-content: center;
           grid-template-columns: auto auto auto auto;
