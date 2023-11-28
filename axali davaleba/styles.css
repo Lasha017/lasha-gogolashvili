@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;900&family=DM+Serif+Display&family=Poppins:wght@300;400;600&display=swap');
+*{
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+}
+body{
+    padding-block: 100px;
+    background-color:#FAFAFA;
+}
+
+.grid-item-1 ,.grid-item-2, .grid-item-3{
+    /* background-color: rebeccapurple; */
+    width: 350px;
+    height: 530px;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+  gap: 50px;
+  width: 1420px;
+  margin: auto;
+}
+.card-con{
+    display: flex;
+  justify-content: center;
+  padding: 32px;
+  flex-direction: column;
+  position: relative;
+}
+.card-con h2,p{
+   margin: 0px;
+   margin-block: 3px;
+}
+.grid-item-1{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.grid-item-2{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grid-item-3{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.card-con-2{
+    display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+.card-con-3{
+  padding: 32px;
+  position: relative;
+}
+.card-con-3 h2,p{
+  margin: 0px;
+  margin-block: 3px;
+}
+.middle-con-1{
+  padding: 32px;
+  position: relative;
+}
+.middle-con-2{
+  padding: 32px;
+  position: relative;
+}
+.middle-con-1 h2,p{
+  margin: 0px;
+  margin-block: 3px;
+}
+.middle-con-2 h2,p{
+  margin: 0px;
+  margin-block: 3px;
+}
+p{
+  font-weight: 400;
+  font-size: 13px; 
+  color: #4D4F62; 
+}
+h2{
+  font-weight: 600;
+  font-size: 20px; 
+  color: #4D4F62; 
+}
+.card-con,.middle-con-1,.middle-con-2,.card-con-3{
+  border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
+}
+.card-con::before{
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: 0px;
+  width: 350px;
+  height: 4px;
+  background-color: #44D3D2;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card-con-3::before{
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: 0px;
+  width: 350px;
+  height: 4px;
+  background: #549EF2; 
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.middle-con-1::before{
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: 0px;
+  width: 350px;
+  height: 4px;
+  background: #EA5454; 
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.middle-con-2::before{
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: 0px;
+  width: 350px;
+  height: 4px;
+  background: #FCAE4A; 
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.header{
+  text-align: center;
+  width: 1420px;
+  margin: auto;
+  padding-bottom: 64px;
+}
+.header h3{
+  color: #4D4F62;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.25px;
+  margin-bottom: 0px;
+}
+.header h4{
+  color: #4D4F62;
+text-align: center;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.25px; 
+margin-block: 0px;
+}
+.header h5{
+  color: #4D4F62;
+text-align: center;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0.104px; 
+width: 540px;
+}
+.h5-fix{
+  justify-content: center;
+  display: flex;
+}
+@media screen and (max-width:1440px) {
+  body{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 311px;
+      padding-block: 80px;
+  }
+  .grid-item-1 ,.grid-item-2, .grid-item-3{
+    /* background-color: rebeccapurple; */
+    /* width: 350px;
+    height: 530px; */
+    height: auto;
+}
+.header{
+  width: 311px;
+  padding-bottom: 0px;
+}
+.header h3{
+  color: #4D4F62;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.167px; 
+}
+.header h4{
+  color: #4D4F62;
+text-align: center;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.167px; 
+}
+.header h5{
+  color: #4D4F62;
+text-align: center;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; 
+letter-spacing: 0.104px; 
+}
+}
