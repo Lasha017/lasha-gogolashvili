@@ -14,12 +14,12 @@
     }
     .first-picture img{
         width: 200px;
-        height: 200px;
+        height: 250px;
         border-radius: 10px;
     }
     .second-picture img{
         width: 400px;
-        height: 200px;
+        height: 250px;
         border-radius: 10px;
     }
     .paragraph-section{
@@ -50,13 +50,17 @@
     .first-picture{
         background-color: var(--orange);
         border-radius: 10px;
-        height: 200px;
+        height: 250px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
     }
     .color-fix{
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
+        height: 250px;
+    }
+    .height-fix{
+        height: 250px;
     }
 
 }
@@ -109,6 +113,7 @@
     display: initial;
     position: absolute;
     left: 0;
+    top: 695px;
     transform: rotate(180deg);
    }
    .grid-container{
