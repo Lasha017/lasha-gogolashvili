@@ -9,6 +9,9 @@
         overflow: hidden;
         width: 300px;
     }
+    .keyboard{
+        width: 550px;
+    }
     .pictures-section{
         padding-left: 39px;
     }
@@ -113,7 +116,7 @@
     display: initial;
     position: absolute;
     left: 0;
-    top: 695px;
+    top: 770px;
     transform: rotate(180deg);
    }
    .grid-container{
