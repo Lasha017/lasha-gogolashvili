@@ -17,7 +17,7 @@ body{
     display: grid;
     justify-content: center;
     grid-template-columns: auto auto auto;
-  gap: 50px;
+  gap: 30px;
   width: 1420px;
   margin: auto;
 }
