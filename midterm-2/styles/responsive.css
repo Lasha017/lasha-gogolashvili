@@ -1,0 +1,120 @@
+@media screen and (min-width:768px) {
+    .container{
+        width: 768px; 
+        background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
+    }
+    .card{
+      background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
+    }
+    .description-section{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        padding-right: 81px;
+    }
+    .position-1{
+        right: -50px;
+    z-index: 100;
+    top: 50px;
+    }
+    .position-2{
+        bottom: 40px;
+        left: -40px;
+        z-index: 100;
+    }
+    .rectangle{
+        display: initial;
+        position: absolute;
+        right: -97px;
+        z-index: 0;
+        top: -100px;
+    }
+    .coffee-parent{
+        z-index: 100;
+    }
+    .coffee{
+       height: 329px;
+       width: 240px;
+       border-radius: 158.5px;
+       margin-top: 80px;
+  margin-left: 15px;
+
+    }
+    .parag-side{
+        margin-top: 60px;
+    }
+    .features-section{
+      grid-template-columns: auto auto;
+      padding: 0px;
+    }
+    .feature-first{
+      width: 350px; 
+      height: 325px; 
+      padding-top: 80px;
+    }
+    .feature p{
+      width: 286px; 
+    }
+    .feature{
+      background: var(--white);
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+  border-radius: 15px;
+  padding-inline: 25px;
+  padding-bottom: 25px;
+  width: 350px;
+  
+  }
+    
+}
+@media screen and (min-width:1440px) {
+      .card{
+        /* padding-inline: 165px; */
+        margin: auto;
+      }
+      .card{
+        background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
+      }
+      .container{
+        width: 1440px;
+        overflow-x: hidden;
+        background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
+      }
+      .description-section{
+        justify-content: space-between;
+        padding-right: 165px;
+      }
+      .parag-side p,h1{
+        width: 450px;
+      }
+     .rectangle{
+        display: initial;
+    position: absolute;
+    right: -220px;
+    z-index: 0;
+    top: -30px;
+    width: 450px;
+    height: 400px;
+     }
+     .header-button:hover{
+        background-color: var(--lightpurple);
+     }
+     .features-section{
+      grid-template-columns: 350px 350px 350px;
+    padding: 0px;
+    justify-content: center;
+    }
+    .feature{
+      background: var(--white);
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+  border-radius: 15px;
+  padding-inline: 25px;
+  padding-bottom: 25px;
+  width: 350px;
+  
+  }
+  .feature-first{
+    width: 350px; 
+    height: 325px; 
+    padding-top: 80px;
+  }
+}
