@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@200;300;400;500;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family:'Karla', sans-serif;
+}
+body{
+    margin: 0px;
+}
+.container{
+    margin: auto;
+}
+.header{
+    padding-inline: 24px;
+    padding-block: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.header-icn{
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.header-btn{
+    border: 0px;
+    padding: 0px;
+    height: 32px;
+    cursor: pointer;
+}
+.desktop-buttons{
+    display: none;
+}
+.right-card{
+    padding-inline: 24px;
+    text-align: center;
+    background-color: var(--purple);
+    color: var(--white);
+    margin-top: -4px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-block: 93px;
+    position: relative;
+}
+.right-card h1{
+    margin: 0px;
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 100% */
+    letter-spacing: -0.667px; 
+    font-family:'DM Serif Display', serif;
+    z-index: 1000;
+}
+.right-card p{
+    margin: 0px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    z-index: 1000;
+}
+.btn-fix{
+   margin-top: 16px;
+}
+.btn-fix button{
+    color: var(--white);
+    text-align: center;
+    background-color: var(--purple);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px; 
+    padding-block: 12px;
+    padding-inline: 29px;
+    border: solid 1px white;
+    cursor: pointer;
+}
+.lines-1{
+    position: absolute;
+    top: -255px;
+    left: 0;
+}
+.main-img{
+    z-index: 100;
+  position: sticky;
+}
+.lines-2{
+    right: 0px;
+    top: 850px;
+    z-index: 1;
+    position: absolute;
+    transform: rotate(180deg);
+      overflow: hidden;
+    }
+.feature-header{
+    margin-top: 260px;
+    margin-bottom: 40px;
+    color: #2C2830;
+    text-align: center;
+    font-family:'DM Serif Display', serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 100% */
+    letter-spacing: -0.667px; 
+}
+.features-section{
+    padding-inline: 16px;
+    margin-bottom: 158px;
+}
+.feature{
+    text-align: center;
+}
+.feature h3{
+    color: #2C2830;
+    text-align: center;
+    font-family:'DM Serif Display', serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.389px; 
+}
+.feature p{
+    color: #837D88;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px
+}
+.box{
+    padding-inline: 24px;
+    padding-block: 72px;
+    color: var(--white);
+    background-color: var(--purple);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 327px;
+    position: relative;
+}
+.box-fix{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+.left-box{
+    text-align: center;
+    z-index: 10000;
+}
+.right-box{
+    text-align: center;
+}
+.box-span{
+    color: #FFF;
+    text-align: center;
+    font-family:'DM Serif Display', serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: -0.556px; 
+}
+.box-btn{
+    color: #FFF;
+    text-align: center;
+    background-color: var(--purple);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px; 
+    border: solid 1px white;
+    padding-inline: 13px;
+    padding-block: 12px;
+}
+.lines-3{
+    position: absolute;
+  top: 0;
+  right: 0;
+}
+.footer-up{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+
+}
+.straight{
+    width: 327px;
+    height: 1px;
+    background-color: var(--grey);
+}
+.grid-item{
+    display: grid;
+    justify-content: center;
+}
+.grid-item h6{
+    color: #837D88;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px
+}
+.span-p{
+    display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  color: #2D2641;
+text-align: center;
+font-family: Karla;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.5px; 
+}
+footer{
+    background: #FAFAFA; 
+    padding-block: 67px;
+    position: relative;
+}
+.last-line{
+    position: absolute;
+  top: -30px;
+  transform: rotate(260deg)
+}
+.title, .logos{
+    cursor: pointer;
+}
+@media screen and (min-width: 1440px) {
+    .header {
+        padding-inline: 165px;
+    }
+    .desktop-buttons{
+        display: flex;
+        gap: 26px;
+        align-items: center;
+    }
+    .middle-card{
+        display: flex;
+        padding-left: 165px;
+    }
+    .left-card{
+        order: 2;
+    }
+    .right-card{
+        text-align: start;
+        margin-top: 2px;
+    }
+    .right-card h1{
+        text-align: start;
+    }
+    .right-card p{
+        text-align: start;
+    }
+    .right-card .btn-fix{
+        text-align: start;
+    }
+    .lines-1{
+        top: 300px;
+        left: -200px;
+    }
+    .lines-2{
+        position: absolute;
+      right: 0;
+      top: -100px;
+      transform: rotate(180deg);
+      overflow: hidden;
+      display: initial;
+        }
+    .main-img{     
+        position: absolute;
+        top: 250px;
+    }
+    .feature-header{
+        text-align: start;
+        padding-inline: 165px;
+    }
+   .features-section{
+    display: flex;
+    margin-top: 96px;
+    padding-inline: 165px;
+    text-align: start;
+    gap: 30px;
+   }
+   .feature h3{
+    text-align: start;
+}
+.feature p{
+    text-align: start;
+}
+.feature{
+    text-align:start;
+}
+.box{
+    width: 1110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-y: hidden;
+}
+.right-box{
+    z-index: 1000;
+}
+.box-btn{
+    cursor: pointer;
+}
+.box-btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.straight{
+    width: 1110px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 255px 255px 255px 255px;
+    justify-content: center;
+}
+.logos-fix{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1110px;
+}
+.title{
+    z-index: 100;
+}
+.last-line{
+    position: absolute;
+  top: -50px;
+  left: 200px;
+  transform: rotate(260deg);
+}
+}

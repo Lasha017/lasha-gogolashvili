@@ -1,0 +1,86 @@
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1400px;
+    }
+    .header-btn{
+        display: none;
+    }
+    .desktop-buttons{
+        display: flex;
+        gap: 26px;
+        align-items: center;
+    }
+    .desktop-buttons h2{
+        text-align: center;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.5px; 
+        color: var(--grey);
+        margin: 0px;
+        cursor: pointer;
+    }
+    .desktop-buttons h2:hover{
+        color: var(--darkpurple)
+
+    }
+    .none-btn{
+        border: 1.5px solid #2C2830; background: var(--white); 
+       color: var(--black);
+       text-align: center;
+       font-size: 13px;
+       font-style: normal;
+       font-weight: 700;
+       line-height: normal;
+       letter-spacing: 1.5px; 
+       padding-block: 13px;
+       padding-inline: 28.5px;
+       cursor: pointer;
+    }
+    .none-btn:hover{
+        background-color: var(--darkpurple);
+        color: var(--white);
+    }
+    .btn-fix button:hover{
+        background-color: white;
+        color: var(--darkpurple);
+    }
+    .middle-card{
+        display: flex;
+        background-color: var(--purple);
+    }
+    .left-card{
+        order: 2;
+    }
+    .right-card{
+        text-align: start;
+        height: 452px;
+  margin-top: 2px;
+    }
+    .right-card h1{
+        text-align: start;
+        width: 540px;
+    }
+    .right-card p{
+        text-align: start;
+        width: 540px;
+    }
+    .right-card .btn-fix{
+        text-align: start;
+    }
+    .main-img{
+        position: absolute;
+  top: 250px;
+    }
+    .lines-2{
+    position: absolute;
+  right: 0;
+  top: -100px;
+  rotate: 45 degree;
+  transform: rotate(220de);
+  transform: rotate(180deg);
+  overflow: hidden;
+  display: initial;
+    }
+}
