@@ -1,0 +1,12 @@
+.form{
+    margin: auto;
+  width: 200px;
+   padding-block: 200px;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+.registration{
+    display: flex;
+    gap: 20px;
+}
