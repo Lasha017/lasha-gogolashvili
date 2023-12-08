@@ -78,6 +78,7 @@
         width: 1440px;
         overflow-x: hidden;
         background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
+        margin: auto;
       }
       .description-section{
         justify-content: space-between;
