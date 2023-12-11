@@ -240,6 +240,8 @@ footer{
 @media screen and (min-width: 1440px) {
     .header {
         padding-inline: 165px;
+        display: flex;
+  align-items: center;
     }
     .desktop-buttons{
         display: flex;
