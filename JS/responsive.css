@@ -13,22 +13,22 @@
         background-color: #FF7979;
         width: 1440px;
         height: 800px;
-        display: flex !important;
-        flex-direction: row !important;
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        padding-inline: 165px !important;
+        padding-inline: 165px;
     }    
     .text{
         width: 525px;
     }
     .text h1{
-        color: #FFF !important;
-        font-size: 50px !important;
-        font-style: normal !important;
-        font-weight: 700 !important;
-        line-height: 55px !important;
-        letter-spacing: -0.521px !important; 
-        text-align: start !important;
+        color: #FFF ;
+        font-size: 50px ;
+        font-style: normal ;
+        font-weight: 700 ;
+        line-height: 55px ;
+        letter-spacing: -0.521px ; 
+        text-align: start ;
     }
     .text p{
         color: #FFF;
@@ -36,18 +36,18 @@
         font-style: normal;
         font-weight: 500;
         line-height: 26px;
-        text-align: start !important;
+        text-align: start ;
     }
     .sign-up{
-        width: 450px !important;
+        width: 450px ;
     }
     input{
-        width: 350px !important;
+        width: 350px ;
     }
     button{
-        width: 350px !important;
+        width: 350px;
     }
     .last{
-        width: 360px !important;
+        width: 360pxs;
     }
 }
