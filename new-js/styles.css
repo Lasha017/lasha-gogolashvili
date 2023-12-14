@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background: #EEE; 
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 162px 332px 162px 306px; 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 962px;
+    height: 636px;
+    gap: 296px;
+}
+.left-side{
+    align-items: center;
+    display: flex;
+}
+.left-side h1{
+    color: #007FDB;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px;
+}
+.right-side{
+    width: 430px;
+    height: 636px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+}
+.bottom{
+     padding-inline: 29px;
+     padding-block: 23px;
+}
+button{
+    width: 70px;
+  height: 41px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #20EEB0;
+    border: 0px;
+    cursor: pointer;
+}
+input{
+    border-radius: 5px;
+    background: #EBEFF2; 
+    border: 0px;
+    padding: 12px 70px 13px 45px; 
+    background-image: url(./akar-icons_circle.svg);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+.top-section{
+    align-items: center;
+  display: flex;
+  gap: 10px;
+
+}
