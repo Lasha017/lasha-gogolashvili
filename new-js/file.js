@@ -8,20 +8,23 @@ add.addEventListener('click', () => {
     li.innerText = input.value;
     ul.appendChild(li);
     console.log(li);
+
+    const div = document.createElement ('div')
+    li.appendChild(div);
     
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox'
     checkbox.classList.add('input-2');
-    li.appendChild(checkbox);
+    div.appendChild(checkbox);
     checkbox.style.color = 'red';
     checkbox.style.borderRadius = '20px';
-    console.log(li);
+    // console.log(div);
     
     const deleteBtn = document.createElement('button');
-    deleteBtn.innerText = 'delete';
+    // deleteBtn.innerText = 'delete';
     deleteBtn.classList.add('delete-btn');
-    li.appendChild(deleteBtn);
-    deleteBtn.src = 'trash.svg';
+    div.appendChild(deleteBtn);
+    deleteBtn.src = 'trash.svg';        
     deleteBtn.style.backgroundColor = 'white';
     console.log(li);
 
@@ -32,4 +35,9 @@ add.addEventListener('click', () => {
     deleteBtn.appendChild(icon);
     deleteBtn.style.backgroundColor = 'white'; 
     console.log(li);
+   
+    deleteBtn.addEventListener('click', () => {
+        ul.removeChild(li);
+    });
+    
 });

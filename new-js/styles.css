@@ -66,3 +66,11 @@ input{
   gap: 10px;
 
 }
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.delete-btn{
+    padding: 0px;
+}
