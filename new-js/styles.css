@@ -2,7 +2,7 @@
 *{
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    overflow: initial !important;
+    /* overflow: initial !important; */
 }
 body{
     background: #EEE; 
@@ -67,6 +67,10 @@ input{
   display: flex;
   gap: 10px;
 
+}
+ul{
+  max-height: 300px;
+  overflow: auto;
 }
 li{
     display: flex;
