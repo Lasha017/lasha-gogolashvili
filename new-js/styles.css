@@ -83,12 +83,12 @@ li{
     width: 20px;
   height: 20px;
 }
-#liveDateTime{
+#currentTime{
     position: absolute;
     top: 130px;
   color: white;
-  font-size: 32px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 400;
-  left: 80px;
+  right: 48px;
 }
