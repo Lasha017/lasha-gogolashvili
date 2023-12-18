@@ -16,12 +16,10 @@ add.addEventListener('click', () => {
     checkbox.type = 'checkbox'
     checkbox.classList.add('input-2');
     div.appendChild(checkbox);
-    checkbox.style.color = 'red';
-    checkbox.style.borderRadius = '20px';
-    // console.log(div);
+    // checkbox.style.color = 'green';
+    // checkbox.style.borderRadius = '20px';
     
     const deleteBtn = document.createElement('button');
-    // deleteBtn.innerText = 'delete';
     deleteBtn.classList.add('delete-btn');
     div.appendChild(deleteBtn);
     deleteBtn.src = 'trash.svg';        
@@ -41,3 +39,22 @@ add.addEventListener('click', () => {
     });
     
 });
+
+
+function updateDateTime() {
+    const dateTimeElement = document.getElementById('liveDateTime');
+    const now = new Date();
+    const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    };
+    const formattedDateTime = now.toLocaleDateString('en-US', options);
+    dateTimeElement.textContent = formattedDateTime;
+}
+
+setInterval(updateDateTime, 1000);
