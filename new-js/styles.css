@@ -97,6 +97,15 @@ li{
   font-weight: 600;
   right: 48px;
 }
+#date{
+  position: absolute;
+  top: 110px;
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;  
+  right: 48px;
+}
 input[type="checkbox"] {
 
     width: 20.5px;
