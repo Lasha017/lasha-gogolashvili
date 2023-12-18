@@ -92,3 +92,40 @@ li{
   font-weight: 400;
   right: 48px;
 }
+input[type="checkbox"] {
+
+    width: 24px;
+    height: 24px;
+    margin-left: 250px;
+    background-color: #FFF;
+    appearance: none;
+    border: solid #20EEB0;
+    content: '\2713';
+    cursor: pointer;
+    border-radius: 100%;
+ 
+ }
+ 
+ input[type="checkbox"]:checked {
+     background-color:#20EEB0 ;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+ 
+   }
+
+ input[type="checkbox"]::before {
+     content: '\2713';
+ 
+     color: #fff;
+     position: absolute;
+     border-radius: 100%;
+ 
+ 
+     transition: transform 0.3s ease-in-out;
+   }
+.check-box-fix{
+    display: flex;
+  margin-left: -40px;
+  align-items: baseline;
+}

@@ -9,8 +9,10 @@ add.addEventListener('click', () => {
     ul.appendChild(li);
     console.log(li);
 
-    const div = document.createElement ('div')
+    const div = document.createElement ('div');
+    div.classList.add('check-box-fix')
     li.appendChild(div);
+
     
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox'
