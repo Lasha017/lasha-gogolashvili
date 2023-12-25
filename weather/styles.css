@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-image: url(./photos/bg-weather.svg);
+    background-repeat: no-repeat;
+    width: 375px;
+}
+.left-side {
+    padding-inline: 22px;
+    padding-top: 19px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 102px;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    width: 135px;
+    color: white;   
+    background-image: url(./photos/fa_search.png);
+    background-repeat: no-repeat;
+    background-position: 115px center; 
+    background-size: 12px;
+    cursor: pointer;
+}
+.description {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.location{
+    display: flex;
+    gap: 5px;
+}
+.temperature {
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -5.12px;
+}
+.city {
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.date {
+    color: #FFF;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.right-side{
+    border-top: 5px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(9.5px);
+    padding-top: 55px;
+}
+.title{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+h3 ,h4 {
+    margin: 0px;
+}
+h4 {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.bottom-side{
+    display: flex;
+    flex-direction: column;
+  justify-content: space-between;
+  padding-inline: 35px;
+  padding-block: 30px;
+  gap: 30px;
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+}
+.right-list{
+    display: flex;
+    gap: 20px;
+    
+}
