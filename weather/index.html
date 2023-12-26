@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./responsive.css">
+    <link rel="icon" type="image/x-icon" href="./photos/1479.3-weather-icon-iconbunny.jpg">
     <title>Weather</title>
 </head>
 <body>
@@ -12,17 +13,101 @@
         <div class="container">
             <div class="left-side">
                 <div class="search">
-                    <div class="left-search"> <img src="./photos/Group 165.svg"></div>
-                    <div class="right-search"> <input type="search" placeholder="Search Location.."></div>
+                    <div class="left-search"> <img src="./photos/Group 165.svg" id="img"></div>
+                    <div class="right-search"> <input type="search" placeholder="Search Location..">
+                        <div class="title-fix">
+                        <h5>Weather Details...</h5>
+                        <h6>thunderstorm with light drizzle</h6>
+                         </div>
+                        <div><div class="bottom-side-1">
+                            <div class="list">
+                                <div class="left-list">Temp max</div>
+                                <div class="right-list">
+                                    <div class="temp">19</div>
+                                    <div class="visual"><img src="./photos/Vector.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="left-list">Temp min</div>
+                                <div class="right-list">
+                                    <div class="temp">15°</div>
+                                    <div class="visual"><img src="./photos/Vector-blue.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="left-list">Humadity</div>
+                                <div class="right-list">
+                                    <div class="temp">58%</div>
+                                    <div class="visual"><img src="./photos/outline copy.svg" ></div>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="left-list">Cloudy</div>
+                                <div class="right-list">
+                                    <div class="temp">86%</div>
+                                    <div class="visual"><img src="./photos/outline.svg" width="18px"></div>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="left-list">Wind</div>
+                                <div class="right-list">
+                                    <div class="temp">5km/h</div>
+                                    <div class="visual"><img src="./photos/wind.svg"></div>    
+                                </div>
+                            </div>
+                        </div>
+                          <div id="line"></div>
+                          <span id="span">Today’s Weather Forecast...</span>
+                       <div class="scroll-section">
+                            <div class="scroll-1">
+                                <div class="justify">
+                                <div><img src="./photos/Snow.svg" alt=""></div>
+                                <div id="block">
+                                    <span class="time-span">09:00</span>
+                                    <span class="wt-span">Snow</span>
+                                </div>
+                                </div>
+                                <div  class="temp-span">
+                                    <span>19</span>
+                                </div>
+                            </div>
+                            <div class="scroll-1">
+                                <div class="justify">
+                                <div><img src="./photos/Snow.svg" alt=""></div>
+                                <div id="block">
+                                    <span class="time-span">09:00</span>
+                                    <span class="wt-span">Snow</span>
+                                </div>
+                                </div>
+                                <div  class="temp-span">
+                                    <span>19</span>
+                                </div>
+                            </div>
+                            <div class="scroll-1">
+                                <div class="justify">
+                                <div><img src="./photos/Snow.svg" alt=""></div>
+                                <div id="block">
+                                    <span class="time-span">09:00</span>
+                                    <span class="wt-span">Snow</span>
+                                </div>
+                                </div>
+                                <div  class="temp-span">
+                                    <span>19</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
                 </div>
-                <div class="description">
-                  <div class="temperature">16°</div>
-                  <div class="Location">
-                    <div class="city">London</div>
-                    <div class="date">06:09 - Monday, 9 Sep ‘23</div>
-                  </div>
-                   <div class="weather-icon"><img src="./photos/outline.svg" ></div>
-                </div>
+            </div>
+            <div class="description">
+              <div class="temperature">16°</div>
+              <div class="Location">
+                <div class="city">London</div>
+                <div class="date">06:09 - Monday, 9 Sep ‘23</div>
+              </div>
+               <div class="weather-icon"><img src="./photos/outline.svg" ></div>
             </div>
             <div class="right-side">
                  <div class="title">

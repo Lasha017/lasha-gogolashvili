@@ -6,6 +6,9 @@
 
 body {
     margin: 0px;
+    background-image: url(./photos/bg-weather.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card {
@@ -13,8 +16,8 @@ body {
     justify-content: center;
 }
 .container{
-    background-image: url(./photos/bg-weather.svg);
-    background-repeat: no-repeat;
+    /* background-image: url(./photos/bg-weather.svg);
+    background-repeat: no-repeat; */
     width: 375px;
 }
 .left-side {
@@ -113,6 +116,12 @@ h3 {
   padding-block: 30px;
   gap: 30px;
 }
+.bottom-side-1 {
+    display: none;
+}
+.title-fix {
+    display: none;
+}
 .list{
   display: flex;
   flex-direction: row;
@@ -127,4 +136,10 @@ h3 {
     display: flex;
     gap: 20px;
     
+}
+#line, #span{
+    display: none;
+}
+.scroll-section{
+    display: none;
 }
