@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    /* overflow: initial !important; */
+}
+body{
+    background: #EEE; 
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 162px 332px 162px 306px; 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 962px;
+    height: 636px;
+    gap: 296px;
+}
+.left-side{
+    align-items: center;
+    display: flex;
+}
+.left-side h1{
+    color: #007FDB;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px;
+}
+.right-side{
+    width: 430px;
+    height: 636px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    position: relative;
+}
+.bottom{
+     padding-inline: 29px;
+     padding-block: 23px;
+}
+button{
+    width: 70px;
+  height: 41px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #20EEB0;
+    border: 0px;
+    cursor: pointer;
+}
+input{
+    border-radius: 5px;
+    background: #EBEFF2; 
+    border: 0px;
+    padding: 12px 70px 13px 45px; 
+    background-image: url(./akar-icons_circle.svg);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+.top-section{
+    align-items: center;
+  display: flex;
+  gap: 10px;
+
+}
+ul{
+  max-height: 300px;
+  overflow: auto;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.delete-btn{
+    padding: 0px;
+}
+.input-2{
+    margin-right: 5px;
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 3px;
+    width: 20px;
+  height: 20px;
+}
+#currentTime{
+    position: absolute;
+    top: 130px;
+  color: white;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  right: 48px;
+}
+#date{
+  position: absolute;
+  top: 110px;
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;  
+  right: 48px;
+}
+input[type="checkbox"] {
+
+    width: 20.5px;
+    height: 24px;
+    margin-left: 250px;
+    background-color: #FFF;
+    appearance: none;
+    border: solid #20EEB0;
+    content: '\2713';
+    cursor: pointer;
+    border-radius: 100%;
+ 
+ }
+ 
+ input[type="checkbox"]:checked {
+     background-color:#20EEB0 ;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+ 
+   }
+
+ input[type="checkbox"]::before {
+     content: '\2713';
+ 
+     color: #fff;
+     position: absolute;
+     border-radius: 100%;
+ 
+ 
+     transition: transform 0.3s ease-in-out;
+   }
+.check-box-fix{
+    display: flex;
+  margin-left: -40px;
+  align-items: baseline;
+}
