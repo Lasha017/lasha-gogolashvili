@@ -1,0 +1,8 @@
+@media screen and (min-width:1440px) {
+    body {
+        background: linear-gradient(180deg, #1E2C37 0%, #1F3341 100%);
+    }
+    .zodiac {
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+}

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="./file.js" defer></script>
+    <title>Weather Website</title>
+    <link rel="icon" type="image/x-icon" href="./photos/image_processing20210830-12423-16kqw7p.gif">
+</head>
+<body>
+    <!-- <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="modeToggle" onclick="toggleMode()">        <<<<<< გადართვის ღილაკი
+            <span class="slider"></span>
+        </label>
+        <span class="mode-label">Dark Mode</span>
+    </div> -->
+    <div class="card"> 
+    <div class="grid-container">
+        <div class="grid-item-1">
+            <div class="left-header"> 
+                <button onclick="myfunction()" class="switch"><img src=".//photos/Group 292.svg"></button>
+            </div>
+            <div  class="right-header">
+                <div class="search"><img src=".//photos/search.svg" alt="search" class="search"></div>
+                <div class="flag"> <img src=".//photos/Ellipse 786.svg" alt="usa" class="flag"></div>
+                <div class="left-header-clone"> 
+                    <button onclick="myfunction()" class="switch"><img src=".//photos/Group 292.svg" class="img-clone-fix"></button>
+                </div>
+                <div class="menu collapsible"> <img src="./photos/menu.svg" alt="menu" class="menu"></div>
+                <div class="collapsible-content">
+                    <a href="#">Home </a>
+                    <a href="./second-page/secondpage.html">Zodiacs</a>
+                    <a href="#">Horoscope</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="grid-item-2">
+            <div class="sun">
+                <div class="sun-icon"><img src="./photos/Sunny.svg" alt="Sun"></div>
+                <div class="sun-title">Tbilisi</div>
+            </div>
+            <div class="temperature">+18°</div>
+            <div class="description">Sunny, clear skies, swirling winds </div>
+            <div class="week7">
+                <div>
+                    <div>Now</div>
+                    <div><img src="./photos/Sunny.svg" class="sun-img"></div>
+                    <div>18°</div>
+                </div>
+                <div>
+                    <div>12</div>
+                    <div><img src="./photos/Sunny.svg" class="sun-img"></div>
+                    <div>19°</div>
+                </div><div>
+                    <div>13</div>
+                    <div><img src="./photos/Sunny.svg" class="sun-img"></div>
+                    <div>21°</div>
+                </div><div>
+                    <div>14</div>
+                    <div><img src="./photos/Sunny.svg" class="sun-img"></div>
+                    <div>22°</div>
+                </div><div>
+                    <div>15</div>
+                    <div><img src="./photos/Sunny.svg" class="sun-img"></div>
+                    <div>24°</div>
+                </div><div>
+                    <div>16</div>
+                    <div><img src="./photos/Sunny.svg" class="sun-img"></div>
+                    <div>26°</div> 
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-3">ამინდები</div>
+        <div class="grid-item-4">
+            <div class="week">
+                <div class="week-title">7 days Forecast</div>
+                <div class="week-button"> <button>7 day <img src="./photos/angle-down-small.svg"></button></div>
+            </div>
+            <div>
+                <div class="eachdays">
+                    <div class="first-row">
+                        <img src="./photos/Sunny.svg" alt="">
+                        <div><span id="first-sp">+18°</span><span id="second-sp">/+17</span></div>
+                    </div>
+                    <div class="second-row" id="margin-fix1">11 September</div>
+                    <div class="third-row">Today</div>
+                </div>
+                <div class="eachdays">
+                    <div class="first-row">
+                        <img src="./photos/rain-sun-cloud.svg" alt="">
+                        <div><span id="first-sp">+24°</span><span id="second-sp">/+17</span></div>
+                    </div>
+                    <div class="second-row" id="margin-fix2">12 September</div>
+                    <div class="third-row">Tue</div>
+                </div> 
+                <div class="eachdays">
+                    <div class="first-row">
+                        <img src="./photos/thunder.svg" alt="">
+                        <div><span id="first-sp">+20°</span><span id="second-sp">/+14</span></div>
+                    </div>
+                    <div class="second-row">13 September</div>
+                    <div class="third-row">Wed</div>
+                </div>
+                <div class="eachdays">
+                    <div class="first-row">
+                        <img src="./photos/thun-rain.svg" alt="">
+                        <div><span id="first-sp">+26°</span><span id="second-sp">/+16</span></div>
+                    </div>
+                    <div class="second-row">14 September</div>
+                    <div class="third-row">Thu</div>
+                </div>
+                <div class="eachdays">
+                    <div class="first-row">
+                        <img src="./photos/wind.svg" alt="">
+                        <div><span id="first-sp">+19°</span><span id="second-sp">/+15</span></div>
+                    </div>
+                    <div class="second-row">15 September</div>
+                    <div class="third-row">Fri</div>
+                </div>
+                <div class="eachdays">
+                    <div class="first-row">
+                        <img src="./photos/Sunny.svg" alt="">
+                        <div><span id="first-sp">+24°</span><span id="second-sp">/+17</span></div>
+                    </div>
+                    <div class="second-row">16 September</div>
+                    <div class="third-row">Sat</div>
+                </div>
+                <div class="eachdays">
+                    <div class="first-row">
+                        <img src="./photos/rain-sun-cloud.svg" alt="">
+                        <div><span id="first-sp">+24°</span><span id="second-sp">/+19</span></div>
+                    </div>
+                    <div class="second-row">17 September</div>
+                    <div class="third-row">Sun</div>
+                </div> 
+            </div>
+
+        </div>
+
+        <div class="grid-item-5">
+            <!--     <div></div>                            mobile   -->
+                <div class="mobile-grid">
+                    <div class="grid-section">
+                        <h3>Moon phase</h3>
+                        <div id="moon-center-fix">
+                            <img src="./photos/Full Moon.svg" alt="Moon-image">
+                        <h2 style="justify-content: center;">Full moon</h2>
+                        </div>
+                    </div>
+                    <div class="grid-section">
+                        <h3>UV Index</h3>
+                        <img src="./photos/Screenshot 2024-01-09 at 20.19.49.png" width="130px">
+                        <h2 id="cntd-h"><span>4.3</span>UV </h2>
+                    </div>
+                    <div class="grid-section">
+                        <h3>Sunrise & Sunset</h3>
+                        <img src="./photos/yellow.svg" width="130px" id="yellow">
+                        <h2 id="span-title-fix"><div style=" display: flex;  gap: 5px;
+                            flex-direction: column;"><img src="./photos/Vector.svg" width="15px" alt="">5:30 AM</div> 
+                            <div style=" display: flex;
+                            flex-direction: column; align-items: end;gap: 5px;"><img src="./photos/Vector(1).svg" width="12px" alt="">6:40 AM</div> </h2>
+                    </div>
+                    <div class="grid-section" id="hhh">
+                        <h3>Humidity</h3>
+                        <div>
+                         <h1 style="display: flex; align-items: center;"><span style="font-size: 50px;">30</span> <div style="gap: 10px; display: flex;">
+                               <span>%</span> <img src="" alt=""> <img src="./photos/Humidity.svg">
+                         </div>
+                        </h1>
+                        <h2 >The dew point is 17°   </h2>   
+                        <!-- <span id="bottom-spn">right now</span>  ზემოთ ჰ2 ში უნდა იყოს ეს სპანი   -->
+                        </div>
+                    </div>
+                    <div class="grid-section">
+                        <h3>Visibility</h3>
+                        <div>
+                         <h1 style="display: flex; align-items: center; margin: 0px;"><span style="font-size: 50px;">02</span> <div style="gap: 5px; display: flex;">
+                               <span>km</span> <img src="" alt=""> <img src="./photos/eye.svg">
+                         </div>
+                        </h1>
+                        <h2 style="  font-size: 12px;">Haze is affecting visibility</h2>   
+                        </div>
+                    </div>   
+                    <div class="grid-section">
+                        <h3>Feels like</h3>
+                        <div>
+                         <h1 style="display: flex; align-items: center; margin: 0px;"><span style="font-size: 50px;">24°</span> <div style="gap: 10px; display: flex;">
+                               <span></span> <img src="" alt=""> <img src="./photos/thermometer-temperature-svgrepo-com 1.svg">
+                         </div>
+                        </h1>
+                        <h2 style="  font-size: 10px;">Humidity is making it feel hotter</h2>   
+                        </div>
+                    </div>
+  <!--     <div></div>                            mobile    -->
+        </div>
+
+
+
+
+
+<!-- 
+        <div class="advert">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam consequuntur tempora quis sed? Alias, quam. Fugiat provident corporis placeat laudantium doloremque maiores sapiente voluptates similique nam illo velit, sequi inventore facilis iste aliquam quidem laboriosam, hic a cum necessitatibus amet, numquam atque. Ut quasi saepe ex sit aliquam iste harum voluptas veritatis dolores asperiores aut repellendus, ab nostrum beatae accusantium voluptatibus, deserunt corrupti ipsa natus quas praesentium necessitatibus nobis? Dolorem quam aspernatur consectetur maxime rerum expedita ut optio quibusdam quaerat quae? Asperiores ab consectetur corporis velit. Magni temporibus accusantium debitis soluta. Placeat ad autem minus ut optio error soluta nihil.</div> -->
+    </div>
+    </div>
+    </div>
+
+
+    <div class="dom">
+        <div class="head">
+            <div>
+              <div class="mix">
+                <div class="head-title">Name</div>
+                <div class="line"></div>
+              </div>
+              <div class="menu">
+                <div class="menu-cube">
+                <img src="./photos/element-3.svg" alt="">
+                 </div>
+                 <a href="./second-page/secondpage.html"><div class="sagittarius">
+                    <div class="menu-sag">
+                        <img src="./photos/sagittarius.svg" alt="">
+                    </div></a>
+                 </div>
+              </div>
+              <div>
+                <div class="phone">
+                    <div class="phone-menu">
+                        <img src="./photos/mobile.svg" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="money">
+                    <div class="money-menu">
+                        <img src="./photos/Group 303.svg" alt="">
+                    </div>
+              </div>
+            </div>
+                    <div class="low-header">
+                        <div class="flag"> <img src="./photos/Ellipse 786.svg" alt=""></div>
+                        <div class="change"><button onclick="myfunction()" class="switch"><img src=".//photos/Group 292.svg"></button></div>
+                        <div class="settings"> <img src="./photos/setting-2.png" alt=""></div>
+                    </div>
+        </div>
+                    <div class="second-section">
+                        <div class="first-top">
+                            <div class="searchbar">
+                                <div class="today"><h1>Today</h1></div>
+                                <div class="searching"><img src="./photos/Component 9.svg" width="50px"></div>
+                            </div>
+                            <div class="sun-section">
+                                <div class="sun-photo"> <img src="./photos/Sunny.svg" width="150px"></div>
+                                <div class="temp-desc">
+                                    <div class="temp"><h4>+18°</h4><h6>Sunny, clear skies, swirling winds </h6></div>
+                                </div>
+                            </div>
+                            <div>  
+                              <div class="beam"></div>
+                                <div>
+                                    <div class="loc">
+                                        <img src="./photos/location-pin.svg" alt="">
+                                        <span class="span1">Tbilisi, Georgia</span>
+                                    </div>
+                                    <div class="cal">
+                                        <img src="./photos/calendar-empty-alt.svg" alt="">
+                                      <div class="span2">  <span>Monday, September 11</span> <span>6:30 AM </span> <a href="#" id="seemore">see more</a>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="first-mid">
+                            <div class="days-title">7 days Forecast</div>
+                            <div class="days-list">7 day <img src="./photos/angle-down-small.svg" alt=""></div>
+                        </div>
+                        <div class="first-bottom">
+                            <div class="copied">
+                                <div class="eachdays">
+                                    <div class="first-row">
+                                        <img src="./photos/Sunny.svg" alt="">
+                                        <div><span id="first-sp">+18°</span><span id="second-sp">/+17</span></div>
+                                    </div>
+                                    <div class="second-row" id="margin-fix1">11 September</div>
+                                    <div class="third-row">Today</div>
+                                </div>
+                                <div class="eachdays">
+                                    <div class="first-row">
+                                        <img src="./photos/rain-sun-cloud.svg" alt="">
+                                        <div><span id="first-sp">+24°</span><span id="second-sp">/+17</span></div>
+                                    </div>
+                                    <div class="second-row" id="margin-fix2">12 September</div>
+                                    <div class="third-row">Tue</div>
+                                </div> 
+                                <div class="eachdays">
+                                    <div class="first-row">
+                                        <img src="./photos/thunder.svg" alt="">
+                                        <div><span id="first-sp">+20°</span><span id="second-sp">/+14</span></div>
+                                    </div>
+                                    <div class="second-row">13 September</div>
+                                    <div class="third-row">Wed</div>
+                                </div>
+                                <div class="eachdays">
+                                    <div class="first-row">
+                                        <img src="./photos/thun-rain.svg" alt="">
+                                        <div><span id="first-sp">+26°</span><span id="second-sp">/+16</span></div>
+                                    </div>
+                                    <div class="second-row">14 September</div>
+                                    <div class="third-row">Thu</div>
+                                </div>
+                                <div class="eachdays">
+                                    <div class="first-row">
+                                        <img src="./photos/wind.svg" alt="">
+                                        <div><span id="first-sp">+19°</span><span id="second-sp">/+15</span></div>
+                                    </div>
+                                    <div class="second-row">15 September</div>
+                                    <div class="third-row">Fri</div>
+                                </div>
+                                <div class="eachdays">
+                                    <div class="first-row">
+                                        <img src="./photos/Sunny.svg" alt="">
+                                        <div><span id="first-sp">+24°</span><span id="second-sp">/+17</span></div>
+                                    </div>
+                                    <div class="second-row">16 September</div>
+                                    <div class="third-row">Sat</div>
+                                </div>
+                                <div class="eachdays">
+                                    <div class="first-row">
+                                        <img src="./photos/rain-sun-cloud.svg" alt="">
+                                        <div><span id="first-sp">+24°</span><span id="second-sp">/+19</span></div>
+                                    </div>
+                                    <div class="second-row">17 September</div>
+                                    <div class="third-row">Sun</div>
+                                </div> 
+                                <div class="pst">
+                                    <div> <img src="./photos/rain-sun-cloud.svg" width="56px"></div>
+                                    <div class="flex-column"> 
+                                        <span>Tomorrow</span><h5>15°</h5><span id="sss">Fog Storm Day</span>
+                                    </div>
+                                    <div><img src="./photos/Vector 58.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+      <div class="third-section">
+        <div class="highlight">Today’s Highlights</div>
+                        <div class="rows-fix">  
+                            <div class="third-first-row">
+                                <div class="grid-section">
+                                    <h3>Moon phase</h3>
+                                    <div id="moon-center-fix">
+                                        <img src="./photos/Full Moon.svg" width="100px">
+                                    <h2 style="justify-content: center;">Full moon</h2>
+                                    </div>
+                                </div>
+                                <div class="humidity-section">
+                                        <div class="hum-des">
+                                            <h6>Humidity</h6>
+                                            <span>30%</span>
+                                        </div>
+                                        <div class="hum-descript">
+                                            <img src="./photos/Humidity.svg" width="20px">
+                                            <span>The dew point is 17 right now</span>
+                                        </div>
+                                </div>
+                          </div>
+                        <div class="third-second-row">
+                          <div class="grid-section" id="grid-alt">
+                            <h3>UV Index</h3>
+                            <img src="./photos/Screenshot 2024-01-09 at 20.19.49.png" id="grid-alt-img">
+                            <h2 id="cntd-h"><span>4.3</span>UV </h2>
+                        </div>
+                        <div class="humidity-section" id="humidity-fx">
+                            <div class="hum-des">
+                                <h6>Visibility</h6>
+                                <span id="km02">02km</span>
+                            </div>
+                            <div class="hum-descript">
+                                <img src="./photos/eye.svg" width="20px">
+                                <span>Haze is affecting visibility</span>
+                            </div>
+                          </div>
+                         </div>
+                         <div class="third-third-row">
+                            <div class="grid-section" id="last-H">
+                                <h3>Sunrise & Sunset</h3>
+                                <img src="./photos/yellow.svg" width="170px">
+                                <h2 id="span-title-fix"><div style=" display: flex;  gap: 5px;
+                                    flex-direction: column;"><img src="./photos/Vector.svg" width="15px" alt="">5:30 AM</div> 
+                                    <div style=" display: flex;
+                                    flex-direction: column; align-items: end;gap: 5px;"><img src="./photos/Vector(1).svg" width="12px" alt="">6:40 AM</div> </h2>
+                            </div>
+                            <div class="humidity-section" id="last-last">
+                                <div class="hum-des">
+                                    <h6>Humidity</h6>
+                                    <span>24°</span>
+                                </div>
+                                <div class="hum-descript">
+                                    <img src="./photos/Humidity.svg" width="20px">
+                                    <span id="id">The dew point is 17 right now</span>
+                                </div>
+                        </div>
+                         </div>
+                      </div>
+                      <div class="middle-section">Advertising</div>
+                      <div class="lower-section">
+                        <div><img src="./photos/pirvelifoto.svg" width="180px" height="270px"></div>
+                        <div><img src="./photos/meorefoto.svg" width="180px" height="270px"></div>
+                        <div><img src="./photos/mesamefoto.svg" width="180px" height="270px"></div>
+                        <div><img src="./photos/bolofoto.svg" width="180px" height="270px"></div>
+                      </div>
+    </div>
+</div>
+
+</body>
+</html>
